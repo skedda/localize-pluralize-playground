@@ -1,0 +1,27 @@
+<button {{on "click" this.addCount}}>+</button>
+<button {{on "click" this.removeCount}}>-</button>
+
+<br>
+<button>
+  Add <var data-var="num-cats">{{this.count}}</var> {{pluralize this.count "cat" without-count=true}}
+</button>
+<br>
+<button>
+  Add <var data-var="num-dogs" data-pluralize={{this.count}}>{{this.count}}</var> dog
+</button>
+
+<br>
+<p>
+  {{this.countHtml2}}
+</p>
+<br>
+<p>
+{{!--  {{this.countHtml}}--}}
+</p>
+<p data-isolate>
+  I am late because I <strong>stuck</strong> in the car jam.
+</p>
+
+<p data-isolate>
+  Permanently <strong>delete any files older than X months?</strong>
+</p>
